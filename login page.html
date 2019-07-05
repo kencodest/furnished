@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" href="login page.css">
+</head>
+
+<body  background="flora.jpg" onload="document.login.reset();">
+
+
+<!--The TopBar-->
+<div class="topbar">
+		<h1>JKUATCU READING SITE</h1>
+</div>
+
+
+<!--Login Words--
+<div class="topwords">
+<h2>Login Page</h2>
+</div>-->
+
+
+<!--Login Form-->
+<div class ="loginform">
+<form name="login"  method="POST" action="BOOK REVIEW2.html">
+<h4>Enter Your Credentials Below</h4>
+
+<label for="username">Username:</label>
+<input type="text" name="username" id="username" placeholder="username" required="required" 
+maxlength="30" autofocus="" autocomplete="" autosave="" tabindex="" onKeyup="checkform()" /><br/><br/></br>
+
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" placeholder="password" required="required" 
+maxlength="50"  onKeyup="checkform()"/><br/><br/><br/>
+
+<a href="#forgot password" title="View Homepage">Forgot Password?</a></br><br/>
+
+<button onclick="myFunction()"  id="submitbutton" type="submit" disabled="disabled" 
+value="Submit">Log in </button>
+<a class="back" href="BOOK REVIEW.html">Back</a>
+
+<p>No account? <a href="registration page.html">Sign Up</a></p>
+</form>
+ </div>
+ 
+ 
+ <!--Designer -->
+ <div id="footnote">
+<h3> Designed by: Kennedy</h3>
+</div>
+
+
+<!--Footer-->
+ <div id="footer">
+  <p>&copy; 2019 JKUATCU DEV TEAM. All rights reserved</p>
+</div>
+
+
+<script>
+function myFunction() {
+    alert("W e l c o m e  B a c k ! !");
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+    function checkform()
+    {
+        var f = document.forms["login"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+
+       document.getElementById('submitbutton').disabled = !cansubmit;
+    }
+</script> 
+
+</body>
+</html>

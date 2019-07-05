@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:auto;
+	min-height:800px;
+    font-family: Calibri;
+    font-size: 17px;
+	overflow-y:hidden;
+	overflow-x:hidden;
+}
+
+
+#myVideo {
+    position:relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+	margin:0;
+}
+/* Add some content at the bottom of the video/page */
+.content {
+	position:fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+	margin-bottom:-68px;
+    width: 100%;
+    padding: 40px;
+	border-radius:25px;
+	margin-bottom:45px;
+     }
+.link-btn {
+	position:relative;
+    width: 40%;
+	bottom:0;
+    font-size: 18px;
+    padding:10px;
+    border: none;
+	border-radius:15px;
+    background: #000;
+    color: white;
+    cursor: pointer;
+	text-decoration:none;
+}
+
+.link-btn:hover {
+    background: #ddd;
+    color: black;
+	text-decoration:underline;
+	color:black;
+	background:white;
+}	
+#footer {
+    position:fixed;
+    width: 100%;
+	color: white;
+	background:rgba(0, 0, 0, 0.9);
+    text-align: center;
+	bottom:0;
+	clear:both;
+	padding:0.1%;
+	
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="reading book.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video> 
+
+
+<div class = "content">
+    <h1>JKUATCU READING CLUB</h1> 
+    <p><b> H e l l o ! !</b></br>Welcome to the JkuatCu Reading Club Website. This is site is focused on group book reading, book swapping and book discussions. 
+						   Sometimes a book can translate your life situations at the moment and or even in the future. Our focus on Christian Literature will give you a
+						   Christ-like life's point of view. We are encouraged to be open-minded as we journey together in exploring Christ's wisdom.</p> 
+    <h2>Ready For The Adventure..! </h2>
+    <p>In the next page you'll explore the site, have a look at the current book in read, login to your account or even register for one.  Cheers :)</p>
+	</br>
+    <a href="login page.html" class="link-btn">Proceed</a>
+</div>
+
+<div id="footer">
+    <p>&copy; 2019 JKUATCU DEV TEAM. All rights reserved</p>
+</div>
+</body>
+</html>

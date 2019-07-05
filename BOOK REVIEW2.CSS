@@ -1,0 +1,523 @@
+<style>
+/*@media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 99.9%) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+    /*body {
+        width:100%;
+    }
+}*/
+/*@media only screen and (max-width: 768px) {
+  video {
+    display:none;
+  }*/
+  
+.right{ float: right; }
+@media (max-width: 700px) {
+   .right{ float: none; }
+}  
+ * {
+    box-sizing: border-box;
+}
+
+
+/* The Entire Body*/
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	overflow:auto;
+	width:100%;
+	min-height : 100%;
+	padding:0;
+	margin:0 auto;
+	position:relative;
+	font-family:Raleway;
+}
+
+
+/*The TopBar*/
+.topbar{
+	position:relative;
+	text-align:center;
+	width:100%;
+	padding:1.5%;
+	background:#ADD8E6;
+	 background: url(blue.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+}
+.topbar h1{
+	/*background-color:#6699cc;
+	background-size: contain;
+	width: 1200px;
+	height:100px;
+	margin-left: 350px;
+	/*object-fit: cover;*/
+	display: inline;
+	position: relative;
+	color: maroon;
+	text-align:center;
+	vertical-align: top;
+    line-height: 160%;
+	font-size: 260%;
+	font-family:Castellar;
+	font-weight: bold;
+	padding:0 20px;
+}
+
+
+/*The Navigation Bar*/
+.navbar {
+	background: url(wordpress.jpg);
+	background-position: left top;
+	background-repeat: repeat;
+	position:relative;
+	width:100%;
+    overflow: hidden;
+    background-color: lightblue;
+    font-family:Helvetica;
+	padding:0.5%;
+}
+.navbar a {
+    float: left;
+	font-family: Calibri;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px 25px;
+	margin-left: 5%;
+    text-decoration: none;
+}
+.navbar a:hover{
+   color: yellow;
+   background-color: transparent;
+   text-decoration: underline;
+   cursor:pointer;
+}
+
+/*Dropdown Menus*/
+/*.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown:hover .dropbtn {
+   color: yellow;
+   background-color: transparent;
+   text-decoration: underline;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+/*Book Content*/
+.content {
+	position:relative;
+	margin-left: 2%;
+	margin-top:`-20%;
+    color: black ;
+	line-height:10px;
+    width: 100%;
+	line-height: 120%;
+    padding: 30px 0 10px 0;
+	font-size:25px;
+	font-family: Sitka Small;
+	text-decoration:underline;
+}
+.content h3 {
+	font-size: 25px;
+	margin-top:-10px;
+	vertical-align:top;
+}
+.content p{
+	font-family:Helvetica;
+	font-size:20px;
+	margin-top:-20px;
+}
+
+
+/*Book Of Week Content*/
+.column {
+    /*flex: 40px;*/
+	overflow:hidden;
+	float:left;
+	margin-top:1%;
+	width: 70%;
+	display:relative;
+	margin-left:2.5%;
+}
+.column img{
+	float:left;
+	margin-right:1.5%;
+	margin-bottom:0.8%;
+    padding: 1px;
+	margin-top:-20px;
+	border:solid maroon 1px;
+}
+.column p{
+	/*word-wrap:break-word;
+	white-space:wrap;
+	float:left;
+	margin:auto;
+	position:flex;
+	margin-left: 7px;
+	line-height:25px;
+	overflow:center;
+	vertical-align:left;*/
+	padding:5px;
+	font-family: Helvetica;
+	font-weight:normal;
+	font-size:17px;
+}
+
+
+/*Right Content*/
+.right {
+  background-color: lightblue;
+  float:left;
+  display:inline-block;
+  margin-top:-10%;
+  margin-left:3%;
+  padding:1%;
+  position:relative;
+  width: 23%;
+  border-radius:15px;
+  background: url(blue.jpg);
+  background-position: left top;
+  background-repeat: repeat;
+  font-family:Calibri;
+   font-size:110%;
+  /*display:flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+ flex-basis: auto;*/
+} 
+.right h2{
+	text-decoration:underline;
+}
+.right a{
+	background:black;
+	padding:2%;
+	color:white;
+	border-radius:10px;
+	text-decoration:none;
+}
+.right a:hover{
+	background:white;
+	color:black;
+	text-decoration:underline;
+}
+
+
+/*Other Books Title*/
+.others{
+	width:100%;
+	float:left;
+	position:relative;
+	text-align:center;
+	font-family: Helvetica;
+	font-weight:bolder;
+	text-decoration:underline;
+	color:maroon;
+	font-size:150%;
+}
+
+
+/*Other Reads In Library*/
+.row{
+	position:relative;
+	width: 100%;
+	float: left;
+	/*margin: 20px auto;
+	margin-left: 1%;
+	display: table;
+	overflow-x:scroll;
+  justify-content: space-between;*/
+}
+.images{ 
+	display: table;
+	float:left; /* allows you to place text under images and align it to image*/
+	text-align: left;
+	width:10%;
+	word-wrap: break-word;
+	margin-left:5%;
+	margin-right:5%;
+}
+.images p{
+	font-family: Calibri;
+    font-size: 15px;
+	color: black;
+	float:left;
+	width:120%;	
+}
+.images a{
+	width:100px;
+	word-wrap: break-word;
+	font-family: Calibri;
+    font-size: 15px;
+	float:left;
+	text-decoration:none;
+	color: blue;
+}
+.images a:hover{
+	color: maroon;
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+/*#myVideo {
+    /*position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    min-width: 100%; 
+	min-height: 100%;
+	width: 500px;
+	height: 20px;
+	object-fit: cover;
+ /*position: absolute; // Play the video in full screen mode*/
+  /*top: 0px; 
+  left: 0px; 
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; /* Put the video behind all other elements*/
+}*/
+
+/*..images{
+    float;
+	idth: 1200px;
+    padding: 5px;
+	display: inline;
+}
+
+/* Clearfix (clear floats)*
+.row::after {
+    content: "";
+    clear: both;
+    display: inline-block;;
+}*/
+
+/* Create three equal columns that sits next to each other */
+/*.topbar{
+    background:yellow;
+    color: blue ;
+    width: 100%;
+    padding:10px;*/
+/*.topbar {
+  margin: 0 auto;
+  width: 75rem;
+  max-width: calc(100% - 6rem);
+
+@media screen and (max-width: 480px)} 
+.topbar {
+      max-width: calc(100% - 3rem); 
+  }*/
+  
+.link-btn {
+    width: 200px;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    background: #000;
+    color: white;
+    cursor: hand;
+}
+
+.link-btn:hover {
+    background: yellow;
+    color: black;
+}
+	
+.next-btn {
+    position: flex;
+    width:150px;
+    font-size:18px;
+    padding: 5px;
+	margin-left: 1000px;
+    border:none;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.next-btn:hover {
+    background: yellow;
+    color: black;
+}
+.buttons{
+    position: relative;
+    left: 30px;
+    bottom: 30%;
+    width: 100%;
+    //background-color:;
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+	
+/*Comments & Email*/
+.pos{
+	position:relative;
+	width:100%;
+	margin-left:3%;
+	margin-bottom:3%;
+	float:left;
+	padding:1%;
+}
+#comments {
+	float:left;
+	position:relative;
+	position: relative;
+	font-family:Calibri;
+	font-size:14px;
+	width:60%;
+}
+textarea{
+	resize:none;
+	border-radius: 15px;
+	border: 2px solid maroon;
+	padding: 3%;
+	width:60%;	
+}
+#comments input{
+	position:relative;
+	border-radius: 15px;
+	border: 1px solid maroon;
+	cursor: pointer;
+	padding:1.5%;
+}
+#comments input:hover{
+	background: black;
+    color: white;
+}
+#email{
+	min-width:200px;
+	position:relative;
+	float:left;
+	font-family:Calibri;
+	font-size:14px;
+	width:40%;
+}
+.email{	
+	position:relative;
+	padding:2%;
+	width:50%;
+}
+.subscribe{
+	border: 1px solid maroon;
+	margin-left:0px;
+	padding:1%;
+}
+.subscribe:hover{
+     cursor: pointer;
+	 background: black;
+    color: white;
+}
+
+/*Prevoius Page
+.previous a{
+	width:40%;
+	margin-left:2%;
+	background:black;
+	padding:2%;
+	color:white;
+	border-radius:10px;
+	text-decoration:none;
+}
+.previous:hover{
+	background:white;
+	color:black;
+	text-decoration:underline;
+}*/
+
+
+/*Designer -->*/
+#footnote{
+	width:100%;
+	position:relative;
+	float:left;
+	text-align:center;
+	letter-spacing:10px;
+	font-style:italic;
+}
+
+
+/*Footer*/
+#footer {
+    clear: both;
+	position:relative;
+	width: 100%;
+	background: #C0C0C0;
+	text-align: center;
+	bottom:0;
+	padding:0.1%;
+	font-family:Calibri;
+	color:maroon;
+	letter-spacing:2px;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:17px;
+	/*border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;*/
+}
+
+/*#footer {
+    clear: both;
+    height: 1%;
+    padding: 30px 10px;
+    background: #EBF3E2;
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+#footer p {
+    font-size: .85em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7C7C7C;
+}*/
+	/*.footer{
+    /*padding:10px;
+	width: 1366px;
+	height: 50px;
+	text-align: center;
+	color:red;
+	margin-bottom:0px;
+	width: 1366px;
+	height:100px; 
+	padding:0px;
+    margin: 0px;
+}*/
+</style>

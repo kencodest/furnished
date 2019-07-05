@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Page</title>
+<link rel="stylesheet" href="registration page.css">
+<script src="jquery.js"></script>
+</head>
+
+<body  background="flora.jpg" onload="document.registration.reset();">
+
+
+<!--The TopBar-->
+<div class="topbar">
+		<h1>JKUATCU READING SITE</h1>
+</div>
+
+
+<!--Registration-
+<div class="topwords">
+<h2>Registration  Page</h2>
+</div>-->
+
+
+<!--Registration Form-->
+<div class="registrationform">
+<h4>REGISTER AS A MEMBER</h4>
+<h5>Enter Your Information Below</h5>
+<form name="registration"  method="POST" action="BOOK REVIEW2.html">
+
+<input class="radio" type="radio" name="student" value="student" required="required" /><p>Student</p>
+<input class="radio" type="radio" name="student" value="associate" required="required"/><p>Associate</p>
+
+<p><input  placeholder="First Name"type="text" name="first_name" required="required"
+id="first_name" onKeyup="checkform()"/></p>
+
+<p><input placeholder="Second Name" type="text" name="first_name" required="required"
+id="first_name" onKeyup="checkform()" /></p>
+
+<p><input placeholder="Email" type="text" name="email" required="required"
+placeholder="email" maxlength="30" onKeyup="checkform()"/></p>
+
+<p><input placeholder="Password" type="password" name="password" required="required"
+placeholder="email" maxlength="30" onKeyup="checkform()"/></p>
+
+<p  onKeyup="checkform()">
+<select>
+   <option selected disabled hidden>Select Ministry</option>
+  <option>Music Ministry</option>
+  <option>HCM</option>
+  <option>Ushers</option>
+  <option>Creative Arts</option>
+  <option>Hospitality</option>
+  <option>None</option>
+</select></p>
+
+<p onKeyup="checkform()"><select>
+  <option selected disabled hidden>Select Evangelistic Team</option>
+  <option>NUSETA</option>
+  <option>UET</option>
+  <option>MUBET</option>
+  <option>CBF</option>
+  <option>NET</option>
+  <option>NORET</option>
+  <option>NAIRET</option>
+  <option>WESO</option>
+  <option>TKET</option>
+  <option>None</option>
+</select></p>
+<!--<p>Contact:</p>
+<input type="text" name="first_name" id="first_name" size="50"/></p><br/>-->
+
+<!--&nbsp;
+<input type="hidden" id="wrong_password"/><br/></br>-->
+
+<button onclick="myFunction()"  id="submitbutton" type="submit" disabled="disabled" 
+value="Submit" onKeyup="checkform()">Sign Up </button>
+<a class="back" href="login page.html">Back</a>  <br/><br/>
+
+<td colspan="2">Already registered? <a href="login page.html">Click here to Log In</a></br>
+</form>
+</div>
+
+
+ <!--Designer -->
+ <div id="footnote">
+<h3> Designed by: Kennedy</h3>
+</div>
+
+
+<!--Footer-->
+ <div id="footer">
+  <p>&copy; 2019 JKUATCU DEV TEAM. All rights reserved</p>
+</div>
+
+
+<script>
+function myFunction() {
+    alert("W e l c o m e  O n b o a r d ! !");
+}
+
+</script>
+
+<script>
+
+function checkform()
+    {
+        
+		var f = document.forms["registration"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+	
+       document.getElementById('submitbutton').disabled = !cansubmit;
+    }
+	
+
+	$('select').change(function() {
+	$(this).parent().siblings().find('.save').prop('disabled', false);
+});
+</script>
+
+<!--<script type="text/javascript" language="javascript">
+    function checkform()
+    {
+        var f = document.forms["registration"].elements;
+        var cansubmit = true;
+
+        for (var i = 0; i < f.length; i++) {
+            if (f[i].value.length == 0) cansubmit = false;
+        }
+		
+       document.getElementById('submitbutton').disabled = !cansubmit;
+    }
+	
+
+	$('select').change(function() {
+  $(this).parent().siblings().find('.save').prop('disabled', false);
+});
+$("input:radio").change(function ()
+  {$("#submitbutton").prop("disabled", false);});
+  
+  var isChecked = $('registrationform input[type="radio"]').is(":checked");
+
+</script>-->
+
+<!--<script type="text/javascript"> 
+function validate(form) { 
+// Checking if at least one period button is selected. Or not. 
+if (!document.form1.sex[0].checked && !document.form1.sex[1].checked){ 
+
+//alert("Please Select Sex"); 
+document.getElementById('my_msg').innerHTML="Select Sex by selecting radio buttons before submitting ";
+return false;}
+
+if (!document.form1.agree.checked) { 
+document.getElementById('my_msg').innerHTML="Agree to Terms & Conditions checkbox before submitting ";
+ return false; } 
+
+document.getElementById('my_msg').innerHTML="Validation is complete.";
+return false;
+
+}
+</script>-->
+</body>
+</html>
